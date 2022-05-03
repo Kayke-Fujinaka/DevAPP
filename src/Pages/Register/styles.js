@@ -44,7 +44,7 @@ export const Input = styled.input`
     width: 345px;
     height: 50px;
     margin-bottom: 30px;
-    padding-left: 25px;
+    padding: 0 25px;
     font-size: 20px;
     font-weight: 400;
     color: #FFFFFF;
@@ -64,10 +64,11 @@ export const Button = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
     width: 342px;
     height: 74px;
+    gap: 10px;
     margin-top: 74px;
+    padding-left: 20px;
     font-size: 17px;
     color: #FFFFFF;
     background: rgba(0, 0, 0, 0.8);
@@ -76,12 +77,43 @@ export const Button = styled.button`
     outline: none;
     cursor: pointer;
     img {
-        display: none;
+        opacity: 0;
         transform: scale(-1);
+        transition: ease-in 0.2s
     }
     :hover {
         img {
-            display: block;
+            opacity: 1;
         }
+    }
+    :active {
+        filter: brightness(0.7);
+    }
+`;
+
+export const User = styled.li`
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 342px;
+    height: 100%;
+    gap: 5px;
+    margin-top: 30px;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 14px;
+    outline: none;
+    .paragraphName {
+        word-break: break-all;
+    }
+    button {
+        background: none;
+        border: none;
+        cursor: pointer;
     }
 `;
