@@ -90,30 +90,3 @@ export const Button = styled.button`
         filter: brightness(0.7);
     }
 `;
-
-export const User = styled.li`
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 342px;
-    height: 100%;
-    gap: 5px;
-    margin-top: 30px;
-    padding: 10px 25px;
-    font-size: 20px;
-    font-weight: 400;
-    color: #FFFFFF;
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: none;
-    border-radius: 14px;
-    outline: none;
-    .paragraphName {
-        word-break: break-all;
-    }
-    button {
-        background: none;
-        border: none;
-        cursor: pointer;
-    }
-`;
