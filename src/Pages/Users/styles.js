@@ -34,7 +34,7 @@ export const H1 = styled.h1`
 
 export const User = styled.li`
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 342px;
     gap: 5px;
@@ -79,8 +79,6 @@ export const Button = styled.button`
         transition: ease-in 0.1s
     }
     :hover {
-        background: rgba(0, 0, 0, 0.8);
-        border: none;
         img {
             opacity: 1;
         }
