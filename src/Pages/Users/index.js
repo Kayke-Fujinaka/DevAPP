@@ -2,13 +2,13 @@ import React, { useEffect, useRef, useState } from "react";
 
 import axios from "axios";
 
-import People from "../../assets/RegisterImage.svg";
+import IconPeoples from "../../assets/SingUpImage.svg";
 import Arrow from "../../assets/Arrow.svg";
 import Trash from "../../assets/Trash.svg";
 
 import * as S from "./styles";
 
-const App = () => {
+const Users = () => {
   const [users, setUsers] = useState([]);
   const inputName = useRef();
   const inputAge = useRef();
@@ -44,21 +44,9 @@ const App = () => {
   return (
     <>
       <S.ContainerMain>
-        <S.Image src={People} alt="Two people talking in a Round Puff." />
+        <S.Image src={IconPeoples} alt="Two people talking in a Round Puff." />
         <S.ContainerItems>
-          <S.H1>Olá!</S.H1>
-
-          <S.Label>Name</S.Label>
-          <S.Input ref={inputName} placeholder="Ex: Kayke" />
-
-          <S.Label>Age</S.Label>
-          <S.Input ref={inputAge} placeholder="Ex: 17" />
-
-          <S.Button onClick={addNewUser}>
-            Register
-            <img src={Arrow} alt="arrow" />
-          </S.Button>
-
+          <S.H1>Usuários</S.H1>
           <ul>
             {users.map((user) => (
               <S.User key={user.id}>
@@ -70,10 +58,14 @@ const App = () => {
               </S.User>
             ))}
           </ul>
+          <S.Button onClick={addNewUser}>
+            <img src={Arrow} alt="arrow" />
+            Voltar
+          </S.Button>
         </S.ContainerItems>
       </S.ContainerMain>
     </>
   );
 };
 
-export default App;
+export default Users;

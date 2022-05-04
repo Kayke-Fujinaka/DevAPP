@@ -7,7 +7,7 @@ import Arrow from "../../assets/Arrow.svg";
 
 import * as S from "./styles";
 
-const App = () => {
+const Register = () => {
   const [users, setUsers] = useState([]);
   const inputName = useRef();
   const inputAge = useRef();
@@ -44,4 +44,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Register;
