@@ -1,31 +1,44 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
-import People from '../../assets/RegisterImage.svg'
-import Arrow from '../../assets/Arrow.svg'
-import Trash from '../../assets/Trash.svg'
+import axios from "axios";
+
+import People from "../../assets/RegisterImage.svg";
+import Arrow from "../../assets/Arrow.svg";
+import Trash from "../../assets/Trash.svg";
 
 import * as S from "./styles";
 
 const App = () => {
-
-  const [ users, setUsers ] = useState([]);
+  const [users, setUsers] = useState([]);
   const inputName = useRef();
   const inputAge = useRef();
 
-  function addNewUser() {
-    setUsers([
-      ...users,
-      { 
-        id: Math.random(), 
-        name: inputName.current.value, 
-        age: inputAge.current.value 
-      }
-    ]);
+  async function addNewUser() {
+    const { data: newUser } = await axios.post("http://localhost:3000/users", {
+      name: inputName.current.value,
+      age: inputAge.current.value
+    });
+
+    setUsers([...users, newUser]);
   }
 
-  function deleteUser(userId) {
-    const newUsers = users.filter( (user) => user.id !== userId);
-    setUsers(newUsers); 
+  useEffect(() => {
+    async function fetchUsers() {
+      const { data: newUsers } = await axios.get("http://localhost:3000/users")
+
+      setUsers(newUsers)
+    }
+    fetchUsers()
+  }, [users])
+
+
+
+  async function deleteUser(userId) {
+    await axios.delete(`http://localhost:3000/users/${userId}`)
+
+    const newUser = users.filter((user) => user.id !== userId);
+
+    setUsers(newUser);
   }
 
   return (
@@ -33,7 +46,6 @@ const App = () => {
       <S.ContainerMain>
         <S.Image src={People} alt="Two people talking in a Round Puff." />
         <S.ContainerItems>
-
           <S.H1>Olá!</S.H1>
 
           <S.Label>Name</S.Label>
@@ -48,7 +60,7 @@ const App = () => {
           </S.Button>
 
           <ul>
-            {users.map(user => (
+            {users.map((user) => (
               <S.User key={user.id}>
                 <p className="paragraphName">{user.name}</p>
                 <p>{user.age}</p>
@@ -61,7 +73,7 @@ const App = () => {
         </S.ContainerItems>
       </S.ContainerMain>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
