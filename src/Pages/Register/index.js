@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { useHistory } from "react-router-dom";
 
 import axios from "axios";
 
@@ -11,6 +12,7 @@ const Register = () => {
   const [users, setUsers] = useState([]);
   const inputName = useRef();
   const inputAge = useRef();
+  const history = useHistory();
 
   async function addNewUser() {
     const { data: newUser } = await axios.post("http://localhost:3000/users", {
@@ -19,6 +21,8 @@ const Register = () => {
     });
 
     setUsers([...users, newUser]);
+
+    history.push("/users")
   }
 
   return (

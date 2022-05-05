@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import Background from '../../assets/SingUpBackground.svg'
 
 export const ContainerMain = styled.div`
@@ -73,6 +74,7 @@ export const Button = styled.button`
     border: 1px solid #FFFFFF;
     border-radius: 14px;
     outline: none;
+    text-decoration: none;
     cursor: pointer;
     img {
         opacity: 0;

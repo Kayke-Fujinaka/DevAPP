@@ -7,20 +7,11 @@ import Arrow from "../../assets/Arrow.svg";
 import Trash from "../../assets/Trash.svg";
 
 import * as S from "./styles";
+import { useHistory } from "react-router-dom";
 
 const Users = () => {
   const [users, setUsers] = useState([]);
-  const inputName = useRef();
-  const inputAge = useRef();
-
-  async function addNewUser() {
-    const { data: newUser } = await axios.post("http://localhost:3000/users", {
-      name: inputName.current.value,
-      age: inputAge.current.value
-    });
-
-    setUsers([...users, newUser]);
-  }
+  const history = useHistory();
 
   useEffect(() => {
     async function fetchUsers() {
@@ -31,14 +22,16 @@ const Users = () => {
     fetchUsers()
   }, [users])
 
-
-
   async function deleteUser(userId) {
     await axios.delete(`http://localhost:3000/users/${userId}`)
 
     const newUser = users.filter((user) => user.id !== userId);
 
     setUsers(newUser);
+  }
+
+  function goRegister() {
+    history.push("/")
   }
 
   return (
@@ -58,7 +51,7 @@ const Users = () => {
               </S.User>
             ))}
           </ul>
-          <S.Button onClick={addNewUser}>
+          <S.Button onClick={goRegister}>
             <img src={Arrow} alt="arrow" />
             Voltar
           </S.Button>
