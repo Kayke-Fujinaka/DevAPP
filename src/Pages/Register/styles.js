@@ -6,7 +6,7 @@ export const ContainerMain = styled.div`
     align-items: center;
     height: 100vh;
     gap: 40px;
-    background: linear-gradient(113deg, rgba(0,217,255,1) 0%, rgba(17,111,245,1) 51%, rgba(54,0,255,1) 100%);
+    background: linear-gradient(180deg, rgba(56,148,255,1) 0%, rgba(10,78,209,1) 38%, rgba(75,37,171,1) 94%);
     background-size: cover;
 `;
 

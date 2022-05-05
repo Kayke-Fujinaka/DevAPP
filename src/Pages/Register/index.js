@@ -33,7 +33,7 @@ const Register = () => {
       <S.ContainerMain>
         <S.Image src={People} alt="Two people talking in a Round Puff." />
         <ContainerItems>
-          <H1>Olá, caro viajante!</H1>
+          <H1>Olá, Caro Viajante :)</H1>
 
           <S.Label>Nome</S.Label>
           <S.Input ref={inputName} placeholder="Ex: Kayke" />
