@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+# MOBILE REGISTER
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="./src/assets/16s.gif" alt="Um gif apresentando o projeto">
 
-## Available Scripts
+>  O projeto é um site mobile que registra o nome e a idade de algum usuário através do Front-End conectado como Back-End.
+## :page_facing_up: Explicação
 
-In the project directory, you can run:
+Fiz uma aplicação "Mobile Register" do curso Dev Club, que funciona com um sistema de registro que tem a opção de cadastrar novos usuários, mostrar todos usuários registrados e deletar um usuário em específico. 
 
-### `npm start`
+Utilizei ReactJs na parte do Front-End e NodeJs (GET, POST e DELETE) na parte do Back-End. A estilização utilizei Styled Components.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📁 Páginas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+O site tem no total 2 páginas, sendo elas:
 
-### `npm test`
+- **Registro:** Página para registrar o usuário no site.
+- **Usuários:** Página que mostra todos os uuários registrados.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## :dart: Etapas ##
 
-### `npm run build`
+Versão 1.0: :heavy_check_mark:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+:heavy_check_mark: Criação da Rotas;\
+:heavy_check_mark: Aplicação dos Estilos Globais;\
+:heavy_check_mark: Componente Header e Footer;\
+:heavy_check_mark: Consumo da API e Contexto da API;\
+:heavy_check_mark: Página de Login e Registro;\
+:heavy_check_mark: Página de Redefinição de Senha;\
+:heavy_check_mark: Responsividade no Login, Registro e Redefinição;\
+:heavy_check_mark: Aplicando os Produtos na Página Home;\
+:heavy_check_mark: Páginas Men, Women, Jewelery e Eletronics;\
+:heavy_check_mark: Consumindo API pela categoria;\
+:heavy_check_mark: Página de Inspect e Our Policy;\
+:heavy_check_mark: Carrinho de Compra no Header;\
+:heavy_check_mark: Responsivo Footer;\
+:heavy_check_mark: Página Search e Error 404;\
+:heavy_check_mark: Validação dos Input com Yup;\
+:heavy_check_mark: Header Fixo;\
+:heavy_check_mark: Adicionando as avaliações nos produtos;\
+:heavy_check_mark: Produtos adicionados no carrinho;\
+:heavy_check_mark: Opções de loja no carrinho;\
+:heavy_check_mark: Página de Entrega;\
+:heavy_check_mark: Página de Pagamento;\
+:heavy_check_mark: Carousel dos produtos na Home;\
+:heavy_check_mark: Arrumando Erro do Carrinho quando estava vazio;\
+:heavy_check_mark: Carousel com Banners na Home;\
+:heavy_check_mark: Seção de parceiros na HOme;\
+:heavy_check_mark: Autenticação com Firebase;\
+:heavy_check_mark: Página de Donate;\
+:heavy_check_mark: Vídeo do projeto;\
+:heavy_check_mark: Finalizado 1.0;
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## :rocket: Tecnologias ##
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+No projeto foram utilizadas as seguintes tecnologias:
 
-### `npm run eject`
+- [ReactJs](https://pt-br.reactjs.org/)
+- [React Router](https://v5.reactrouter.com/web/guides/quick-start)
+- [Styled-Components](https://styled-components.com/docs)
+- [NodeJs](https://nodejs.org/en/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## :closed_book: Requisitos ##
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Antes de iniciar :checkered_flag:, você precisa ter [Git](https://git-scm.com) e [Node](https://nodejs.org/en/) instalados.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## :checkered_flag: Começando ##
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+# Clone this project
+$ git clone https://github.com/Kayke-Fujinaka/E-commerce
+# Access
+$ cd e-commerce
+# Install dependencies
+$ yarn or npm 
+# Run the project
+$ yarn start or npm start 
+# The server will initialize in the <http://localhost:3000>
+```
 
-## Learn More
+Precisa criar um sistema de Registro no Node.js, sendo eles: GET, POST e DELETE.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🤝 Colaboradores
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
-### Code Splitting
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/98772000?s=400&u=80de9af672be7f75cc7a546838552cf63d5b82fe&v=4" width="160px;" alt="Foto do Kayke Fujinaka no GitHub"/><br>
+        <sub>
+          <b>Kayke Fujinaka</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📝 Licença
 
-### Analyzing the Bundle Size
+Este projeto está sob licença. Consulte o arquivo [LICENSE](LICENSE.md) para obter mais detalhes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+&#xa0;
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<a href="#top">Volte para o topo</a>
