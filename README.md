@@ -18,37 +18,15 @@ O site tem no total 2 páginas, sendo elas:
 
 ## :dart: Etapas ##
 
-Versão 1.0: :heavy_check_mark:
-
-:heavy_check_mark: Criação da Rotas;\
-:heavy_check_mark: Aplicação dos Estilos Globais;\
-:heavy_check_mark: Componente Header e Footer;\
-:heavy_check_mark: Consumo da API e Contexto da API;\
-:heavy_check_mark: Página de Login e Registro;\
-:heavy_check_mark: Página de Redefinição de Senha;\
-:heavy_check_mark: Responsividade no Login, Registro e Redefinição;\
-:heavy_check_mark: Aplicando os Produtos na Página Home;\
-:heavy_check_mark: Páginas Men, Women, Jewelery e Eletronics;\
-:heavy_check_mark: Consumindo API pela categoria;\
-:heavy_check_mark: Página de Inspect e Our Policy;\
-:heavy_check_mark: Carrinho de Compra no Header;\
-:heavy_check_mark: Responsivo Footer;\
-:heavy_check_mark: Página Search e Error 404;\
-:heavy_check_mark: Validação dos Input com Yup;\
-:heavy_check_mark: Header Fixo;\
-:heavy_check_mark: Adicionando as avaliações nos produtos;\
-:heavy_check_mark: Produtos adicionados no carrinho;\
-:heavy_check_mark: Opções de loja no carrinho;\
-:heavy_check_mark: Página de Entrega;\
-:heavy_check_mark: Página de Pagamento;\
-:heavy_check_mark: Carousel dos produtos na Home;\
-:heavy_check_mark: Arrumando Erro do Carrinho quando estava vazio;\
-:heavy_check_mark: Carousel com Banners na Home;\
-:heavy_check_mark: Seção de parceiros na HOme;\
-:heavy_check_mark: Autenticação com Firebase;\
-:heavy_check_mark: Página de Donate;\
-:heavy_check_mark: Vídeo do projeto;\
-:heavy_check_mark: Finalizado 1.0;
+:heavy_check_mark: Criação da estrutura da página de Registro;\
+:heavy_check_mark: Estilização da página de Registro;\
+:heavy_check_mark: Conectando o Front-End com o Back-End;\
+:heavy_check_mark: Criação da estrutura da página de Usuários;\
+:heavy_check_mark: Estilização da página de Usuários;\
+:heavy_check_mark: Estilização global de alguns itens;\
+:heavy_check_mark: Criação das Rotas com Router Dom v6;\
+:heavy_check_mark: Componentização do H1 e ContainerItems;\
+:heavy_check_mark: Finalizado.
 
 ## :rocket: Tecnologias ##
 
