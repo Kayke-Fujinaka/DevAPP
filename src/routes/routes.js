@@ -1,17 +1,19 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Register from '../Pages/Register'
 import Users from '../Pages/Users'
 
-function Routes() {
+function MyRoutes() {
 
-    return (
-            <Router>
-                <Route exact path="/" component={Register} />
-                <Route exact path="/users" component={Users} />
-            </Router>
+    return (  
+        <Router>
+            <Routes>
+                <Route path="/" element={<Register />} />
+                <Route path="/users" element={<Users />} />
+            </Routes>
+        </Router>
     )
 }
 
-export default Routes
+export default MyRoutes

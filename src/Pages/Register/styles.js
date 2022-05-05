@@ -25,14 +25,6 @@ export const ContainerItems = styled.div`
     border-radius: 61px 61px 0px 0px;
 `;
 
-export const H1 = styled.h1`
-    text-align: center;
-    margin-bottom: 60px;
-    font-size: 34px;
-    font-weight: 700;
-    color: #FFFFFF;
-`;
-
 export const Label = styled.p`
     padding-left: 25px;
     font-size: 18px;

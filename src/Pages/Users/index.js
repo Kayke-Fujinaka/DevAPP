@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import axios from "axios";
 
@@ -7,11 +8,10 @@ import Arrow from "../../assets/Arrow.svg";
 import Trash from "../../assets/Trash.svg";
 
 import * as S from "./styles";
-import { useHistory } from "react-router-dom";
 
 const Users = () => {
   const [users, setUsers] = useState([]);
-  const history = useHistory();
+  const navigate = useNavigate();
 
   useEffect(() => {
     async function fetchUsers() {
@@ -31,7 +31,7 @@ const Users = () => {
   }
 
   function goRegister() {
-    history.push("/")
+    navigate("/")
   }
 
   return (

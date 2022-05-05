@@ -1,10 +1,12 @@
 import React, { useRef, useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import axios from "axios";
 
 import People from "../../assets/RegisterImage.svg";
 import Arrow from "../../assets/Arrow.svg";
+
+import H1 from '../../components/Title'
 
 import * as S from "./styles";
 
@@ -12,7 +14,7 @@ const Register = () => {
   const [users, setUsers] = useState([]);
   const inputName = useRef();
   const inputAge = useRef();
-  const history = useHistory();
+  const navigate = useNavigate();
 
   async function addNewUser() {
     const { data: newUser } = await axios.post("http://localhost:3000/users", {
@@ -22,7 +24,7 @@ const Register = () => {
 
     setUsers([...users, newUser]);
 
-    history.push("/users")
+    navigate("/users")
   }
 
   return (
@@ -30,7 +32,7 @@ const Register = () => {
       <S.ContainerMain>
         <S.Image src={People} alt="Two people talking in a Round Puff." />
         <S.ContainerItems>
-          <S.H1>Olá!</S.H1>
+          <H1>Olá!</H1>
 
           <S.Label>Name</S.Label>
           <S.Input ref={inputName} placeholder="Ex: Kayke" />
