@@ -33,16 +33,16 @@ const Register = () => {
       <S.ContainerMain>
         <S.Image src={People} alt="Two people talking in a Round Puff." />
         <ContainerItems>
-          <H1>Olá!</H1>
+          <H1>Olá, caro viajante!</H1>
 
-          <S.Label>Name</S.Label>
+          <S.Label>Nome</S.Label>
           <S.Input ref={inputName} placeholder="Ex: Kayke" />
 
-          <S.Label>Age</S.Label>
+          <S.Label>Idade</S.Label>
           <S.Input ref={inputAge} placeholder="Ex: 17" />
 
           <S.Button onClick={addNewUser}>
-            Register
+            Registrar
             <img src={Arrow} alt="arrow" />
           </S.Button>
         </ContainerItems>

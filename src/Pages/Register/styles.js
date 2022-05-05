@@ -1,26 +1,25 @@
 import styled from "styled-components";
 
-import Background from '../../assets/RegisterBackground.svg'
-
 export const ContainerMain = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
     gap: 40px;
-    background-image: url("${Background}");
+    background: linear-gradient(113deg, rgba(0,217,255,1) 0%, rgba(17,111,245,1) 51%, rgba(54,0,255,1) 100%);
     background-size: cover;
 `;
 
 export const Image = styled.img`
     margin-top: 30px;
+    max-height: 175px;
 `;
 
 export const Label = styled.p`
     padding-left: 25px;
     font-size: 18px;
     font-weight: 400;
-    color: #EEEEEE;
+    color: #FFF;
     letter-spacing: -0.408px;
 `;
 
@@ -55,7 +54,7 @@ export const Button = styled.button`
     padding-left: 20px;
     font-size: 17px;
     color: #FFFFFF;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 1);
     border: none;
     border-radius: 14px;
     outline: none;
