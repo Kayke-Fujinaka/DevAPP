@@ -7,6 +7,7 @@ import People from "../../assets/RegisterImage.svg";
 import Arrow from "../../assets/Arrow.svg";
 
 import H1 from '../../components/Title'
+import ContainerItems from '../../components/ContainerItems'
 
 import * as S from "./styles";
 
@@ -31,7 +32,7 @@ const Register = () => {
     <>
       <S.ContainerMain>
         <S.Image src={People} alt="Two people talking in a Round Puff." />
-        <S.ContainerItems>
+        <ContainerItems>
           <H1>Olá!</H1>
 
           <S.Label>Name</S.Label>
@@ -44,7 +45,7 @@ const Register = () => {
             Register
             <img src={Arrow} alt="arrow" />
           </S.Button>
-        </S.ContainerItems>
+        </ContainerItems>
       </S.ContainerMain>
     </>
   );

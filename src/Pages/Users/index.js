@@ -8,6 +8,7 @@ import Arrow from "../../assets/Arrow.svg";
 import Trash from "../../assets/Trash.svg";
 
 import H1 from '../../components/Title'
+import ContainerItems from '../../components/ContainerItems'
 
 import * as S from "./styles";
 
@@ -40,7 +41,7 @@ const Users = () => {
     <>
       <S.ContainerMain>
         <S.Image src={IconPeoples} alt="Two people talking in a Round Puff." />
-        <S.ContainerItems>
+        <ContainerItems isHeight={true}>
           <H1>Usuários</H1>
 
           <ul>
@@ -59,7 +60,7 @@ const Users = () => {
             <img src={Arrow} alt="arrow" />
             Voltar
           </S.Button>
-        </S.ContainerItems>
+        </ContainerItems>
       </S.ContainerMain>
     </>
   );
