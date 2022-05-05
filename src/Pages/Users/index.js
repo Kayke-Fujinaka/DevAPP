@@ -7,6 +7,8 @@ import IconPeoples from "../../assets/SingUpImage.svg";
 import Arrow from "../../assets/Arrow.svg";
 import Trash from "../../assets/Trash.svg";
 
+import H1 from '../../components/Title'
+
 import * as S from "./styles";
 
 const Users = () => {
@@ -39,7 +41,8 @@ const Users = () => {
       <S.ContainerMain>
         <S.Image src={IconPeoples} alt="Two people talking in a Round Puff." />
         <S.ContainerItems>
-          <S.H1>Usuários</S.H1>
+          <H1>Usuários</H1>
+
           <ul>
             {users.map((user) => (
               <S.User key={user.id}>
@@ -51,6 +54,7 @@ const Users = () => {
               </S.User>
             ))}
           </ul>
+
           <S.Button onClick={goRegister}>
             <img src={Arrow} alt="arrow" />
             Voltar

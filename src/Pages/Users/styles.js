@@ -25,14 +25,6 @@ export const ContainerItems = styled.div`
     border-radius: 61px 61px 0px 0px;
 `;
 
-export const H1 = styled.h1`
-    text-align: center;
-    margin-bottom: 60px;
-    font-size: 34px;
-    font-weight: 700;
-    color: #FFFFFF;
-`;
-
 export const User = styled.li`
     display: flex;
     justify-content: space-between;
