@@ -45,9 +45,9 @@ Antes de iniciar :checkered_flag:, você precisa ter [Git](https://git-scm.com) 
 
 ```bash
 # Clone this project
-$ git clone https://github.com/Kayke-Fujinaka/E-commerce
+$ git clone https://github.com/Kayke-Fujinaka/Mobile-Register
 # Access
-$ cd e-commerce
+$ cd projeto
 # Install dependencies
 $ yarn or npm 
 # Run the project
