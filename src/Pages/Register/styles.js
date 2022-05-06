@@ -18,7 +18,7 @@ export const Image = styled.img`
 export const Label = styled.p`
     padding-left: 25px;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
     color: #FFF;
     letter-spacing: -0.408px;
 `;
@@ -31,14 +31,14 @@ export const Input = styled.input`
     font-size: 20px;
     font-weight: 400;
     color: #FFFFFF;
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.15);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
     border-radius: 14px;
     outline: none;
     &::placeholder {
         font-size: 20px;
-        font-weight: 400;
+        font-weight: 500;
         color: #FFFFFF;
     }
 `;
