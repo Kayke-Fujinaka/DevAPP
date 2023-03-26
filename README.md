@@ -1,51 +1,52 @@
-# MOBILE REGISTER
+<h1 align="center">📱 DevAPP</h1>
 
-<img src="./src/assets/16s.gif" alt="Um gif apresentando o projeto">
+<img src="./src/assets/16s.gif" alt="A gif introducing the project">
 
->  O projeto é um site mobile que registra o nome e a idade de algum usuário através do Front-End conectado como Back-End.
-## :page_facing_up: Explicação
+> The project is a mobile site that registers the name and age of a user through the Front-End connected as the Back-End.
 
-Fiz uma aplicação "Mobile Register" do curso Dev Club, que funciona com um sistema de registro que tem a opção de cadastrar novos usuários, mostrar todos usuários registrados e deletar um usuário em específico. 
+## :page_facing_up: Explanation
 
-Utilizei ReactJs na parte do Front-End e NodeJs (GET, POST e DELETE) na parte do Back-End. A estilização utilizei Styled Components.
+I made a "Mobile Register" application for the Dev Club course, which works with a registration system that has the option of registering new users, showing all registered users and deleting a specific user.
 
-## 📁 Páginas
+I used ReactJs in the Front-End part and NodeJs (GET, POST and DELETE) in the Back-End part. The styling I used Styled Components.
 
-O site tem no total 2 páginas, sendo elas:
+## 📁 Pages
 
-- **Registro:** Página para registrar o usuário no site.
-- **Usuários:** Página que mostra todos os uuários registrados.
+The site has a total of 2 pages, which are:
 
-## :dart: Etapas ##
+- **Registration:** Page to register the user on the site.
+- **Users:** Page showing all registered users.
 
-:heavy_check_mark: Criação da estrutura da página de Registro;\
-:heavy_check_mark: Estilização da página de Registro;\
-:heavy_check_mark: Conectando o Front-End com o Back-End;\
-:heavy_check_mark: Criação da estrutura da página de Usuários;\
-:heavy_check_mark: Estilização da página de Usuários;\
-:heavy_check_mark: Estilização global de alguns itens;\
-:heavy_check_mark: Criação das Rotas com Router Dom v6;\
-:heavy_check_mark: Componentização do H1 e ContainerItems;\
-:heavy_check_mark: Finalizado.
+## :dart: Steps ##
 
-## :rocket: Tecnologias ##
+:heavy_check_mark: Creation of the Registry page structure;\
+:heavy_check_mark: Registration page styling;\
+:heavy_check_mark: Connecting Front-End with Back-End;\
+:heavy_check_mark: Creation of the Users page structure;\
+:heavy_check_mark: Users page styling;\
+:heavy_check_mark: Global styling of some items;\
+:heavy_check_mark: Creation of Routes with Router Dom v6;\
+:heavy_check_mark: Componentization of H1 and ContainerItems;\
+:heavy_check_mark: Done.
 
-No projeto foram utilizadas as seguintes tecnologias:
+## :rocket: Technologies
+
+The following tools were used in this project:
 
 - [ReactJs](https://pt-br.reactjs.org/)
 - [React Router](https://v5.reactrouter.com/web/guides/quick-start)
 - [Styled-Components](https://styled-components.com/docs)
 - [NodeJs](https://nodejs.org/en/)
 
-## :closed_book: Requisitos ##
+## :closed_book: Requirements ##
 
-Antes de iniciar :checkered_flag:, você precisa ter [Git](https://git-scm.com) e [Node](https://nodejs.org/en/) instalados.
+Before starting, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed on your computer.
 
-## :checkered_flag: Começando ##
+## :checkered_flag: Getting Started ##
 
 ```bash
 # Clone this project
-$ git clone https://github.com/Kayke-Fujinaka/Mobile-Register
+$ git clone https://github.com/Kayke-Fujinaka/DevAPP
 # Access
 $ cd projeto
 # Install dependencies
@@ -55,17 +56,17 @@ $ yarn start or npm start
 # The server will initialize in the <http://localhost:3000>
 ```
 
-Precisa criar um sistema de Registro no Node.js, sendo eles: GET, POST e DELETE.
+You need create an user's routes with: GET, POST e DELETE.
 
-## 🤝 Colaboradores
+## 🤝 Contributors
 
-Agradecemos às seguintes pessoas que contribuíram para este projeto:
+We want to thank the following people who contributed to this project:
 
 <table>
   <tr>
     <td align="center">
       <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/98772000?s=400&u=80de9af672be7f75cc7a546838552cf63d5b82fe&v=4" width="160px;" alt="Foto do Kayke Fujinaka no GitHub"/><br>
+        <img src="https://avatars.githubusercontent.com/u/98772000?s=400&u=80de9af672be7f75cc7a546838552cf63d5b82fe&v=4" width="100px;" alt="Kayke Fujinaka's photo on GitHub"/><br>
         <sub>
           <b>Kayke Fujinaka</b>
         </sub>
@@ -74,10 +75,10 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
   </tr>
 </table>
 
-## 📝 Licença
+## 📝 License
 
-Este projeto está sob licença. Consulte o arquivo [LICENSE](LICENSE.md) para obter mais detalhes.
+This project is under license. See the [LICENSE](LICENSE.md) file for more details.
 
 &#xa0;
 
-<a href="#top">Volte para o topo</a>
+<a href="#top">Back to top</a>
